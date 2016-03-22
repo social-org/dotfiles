@@ -47,6 +47,9 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion
 
+# Install ZSH et module
+brew install zsh zsh-completions
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
