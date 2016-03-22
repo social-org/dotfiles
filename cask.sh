@@ -67,7 +67,7 @@ apps=(
   geektool
   google-chrome
   goofy
-  hazel
+  #hazel
   hosts
   iterm2-beta
   keepingyouawake
