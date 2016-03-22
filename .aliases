@@ -56,11 +56,11 @@ alias sl="cd ~/projects/lowes-slate-microsite/"
 alias ua="cd ~/projects/under-armour-blog/wp-content/themes/ua"
 
 #spotify shortcuts https://github.com/troyxmccall/term-spot
-alias next="spotify next"
-alias stop="spotify pause"
-alias prev="spotify prev"
-alias ct="spotify info"
-alias play="spotify play"
+#alias next="spotify next"
+#alias stop="spotify pause"
+#alias prev="spotify prev"
+#alias ct="spotify info"
+#alias play="spotify play"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -95,7 +95,7 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+#alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get OS X Software Updates, Brew Forumulas, Upgrade all Casks to latest versionsm, update installed Ruby gems, Homebrew, Cask, Atom, NPM, Vagrant plugins, Composer and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; cask-upgrade auto; brew cleanup; brew cask cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; apm update --all -yes; vagrant plugin update; composer global update;'
@@ -105,7 +105,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-# Flush DNS on Yosemite
+# Flush DNS on Yosemite# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
 alias flush="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
