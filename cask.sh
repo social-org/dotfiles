@@ -103,7 +103,7 @@ apps=(
   suspicious-package
   telegram
   torbrowser
-  tower
+  #tower
   transmission
   transmit
   vagrant
